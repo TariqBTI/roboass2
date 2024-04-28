@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import rospy
 import actionlib
+from math import sin, cos
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 from geometry_msgs.msg import PoseWithCovarianceStamped
 
