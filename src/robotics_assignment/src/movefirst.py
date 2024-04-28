@@ -39,7 +39,6 @@ def go_to_goal(x, y, theta):
 
 if __name__ == '__main__':
     try:
-        rospy.init_node('movebase_client_py')
         result = go_to_goal(-2, 1, 0)  # x, y, theta
         if result:
             rospy.loginfo("Goal execution done!")
