@@ -38,6 +38,7 @@ def go_to_goal(x, y, theta):
         return client.get_result()
 
 if __name__ == '__main__':
+    rospy.init_node("movefirst_node")  # Initialize ROS node
     try:
         result = go_to_goal(-2, 1, 0)  # x, y, theta
         if result:
